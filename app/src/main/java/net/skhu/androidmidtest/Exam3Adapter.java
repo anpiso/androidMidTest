@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 
-public class exam3Adapter extends RecyclerView.Adapter<exam3Adapter.ViewHolder>{
+public class Exam3Adapter extends RecyclerView.Adapter<Exam3Adapter.ViewHolder>{
 
     static class ViewHolder extends RecyclerView.ViewHolder{
         TextView textView;
@@ -25,20 +25,20 @@ public class exam3Adapter extends RecyclerView.Adapter<exam3Adapter.ViewHolder>{
     LayoutInflater layoutInflater;
     ArrayList<String> arrayList;
 
-    public exam3Adapter(Context context, ArrayList<String> arrayList) {
+    public Exam3Adapter(Context context, ArrayList<String> arrayList) {
         this.layoutInflater = LayoutInflater.from(context);
         this.arrayList = arrayList;
     }
 
     @Override
-    public exam3Adapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
+    public Exam3Adapter.ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
         View view = layoutInflater.inflate(R.layout.title, viewGroup, false);
         return new ViewHolder(view);
 
     }
 
     @Override
-    public void onBindViewHolder(@NonNull exam3Adapter.ViewHolder viewHolder, int index) {
+    public void onBindViewHolder(final Exam3Adapter.ViewHolder viewHolder, final int index) {
         viewHolder.textView.setText(arrayList.get(index));
     }
 

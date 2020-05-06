@@ -1,7 +1,7 @@
 package net.skhu.androidmidtest;
 
-public class title {
-    String title = title;
+public class Title {
+    String title;
 
     public String getTitle() {
         return title;
